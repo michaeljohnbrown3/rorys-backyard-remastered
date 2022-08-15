@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Gagalin;
+  src: url(../assets/fonts/Gagalin-Regular.otf);
+}
+@font-face {
+  font-family: 'Architects Daughter';
+  src: url(../assets/fonts/ArchitectsDaughter-Regular.ttf);
+}
+
+$font-primary: Gagalin;
+$font-secondary: Montserrat, sans-serif;
+$font-tertiary: 'Architects Daughter';

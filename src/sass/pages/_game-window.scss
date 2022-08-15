@@ -1,0 +1,79 @@
+.game-window {
+  padding: 1rem;
+  &__score-timer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__score {
+    @include scoreboard;
+    background-color: $color-tan;
+    display: flex;
+    flex-shrink: 0;
+
+    &--text {
+    }
+  }
+
+  &__timer {
+    @include scoreboard;
+    background-color: $color-light-blue;
+    &--text {
+    }
+  }
+
+  &__lens {
+    @include centerOfViewport;
+    // border: 0.1rem solid $color-black;
+    width: 11rem;
+    height: 11rem;
+    z-index: 2;
+    &--circle {
+      stroke: $color-black;
+      stroke-width: 0.4rem;
+      stroke-dasharray: -90;
+      stroke-dashoffset: 1000;
+      fill: none;
+      //   @include centerOfViewport;
+      //   width: 10rem;
+      //   height: 10rem;
+      //   border: 0.4rem solid $color-black;
+      //   border-radius: 100%;
+      //   animation: all 3s;
+      //   stroke: $color-lens-fill;
+      &:hover {
+        width: 12rem;
+        height: 12rem;
+        stroke: $color-lens-fill;
+        stroke-width: 1rem;
+        stroke-dasharray: 360;
+        stroke-dashoffset: 360;
+        animation: stroke 3s linear forwards;
+        //for development purposes only
+        // width: 11rem;
+        // height: 11rem;
+        // border: 1rem solid $color-lens-fill;
+        @keyframes stroke {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+        // stroke-width: 1rem;
+        // stroke-dashoffset: 20;
+      }
+    }
+  }
+
+  &__flash {
+    display: none;
+    position: relative;
+    // border: .1rem solid $color-white; Not sure I need this
+    background-color: $color-white;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    // color: $color-black; Not sure I need this
+    z-index: 1;
+  }
+}

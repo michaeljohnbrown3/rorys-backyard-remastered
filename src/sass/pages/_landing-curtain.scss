@@ -1,0 +1,119 @@
+.landing-curtain {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-image: linear-gradient(to top, $color-sky-light, $color-sky-dark);
+  background-color: $color-sky-light;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  transition: 1.5s;
+  z-index: 1000;
+}
+
+.cim-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+
+  &__cloud-container {
+    max-width: 20rem;
+    max-height: auto;
+    padding: 2.5rem 1rem;
+    padding-bottom: 0;
+
+    &--cloud {
+      width: 17.5rem;
+      height: auto;
+      background: $color-cloud-white;
+      border-radius: 5rem;
+      position: relative;
+      font-family: $font-primary;
+      font-size: 1.6rem;
+      align-items: center;
+      padding: 1rem 0;
+
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: $color-cloud-white;
+        z-index: -1;
+      }
+
+      &:after {
+        width: 5rem;
+        height: 5rem;
+        top: -2.5rem;
+        left: 2.5rem;
+        border-radius: 50%;
+      }
+
+      &:before {
+        width: 9rem;
+        height: 9rem;
+        top: -4.5rem;
+        right: 2.5rem;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__game-info {
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: $color-white;
+    text-shadow: $text-shadow;
+    order: 3;
+    padding: 1.5rem 1.5rem;
+  }
+
+  &__magnifying-glass {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+.directions {
+  max-width: 65%;
+  margin-left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__line {
+    font-family: $font-primary;
+    font-size: 2.5rem;
+    color: $color-white;
+    text-shadow: $text-shadow;
+    list-style: none;
+    list-style: decimal;
+    &--to-play {
+      text-decoration: underline;
+    }
+    &--1 {
+    }
+    &--2 {
+    }
+    &--3 {
+    }
+  }
+}
+
+.start-btn-container {
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.grass {
+  z-index: -5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

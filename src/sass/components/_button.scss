@@ -1,0 +1,19 @@
+.btn {
+  position: relative;
+  text-align: center;
+  font-size: 3.8rem;
+  font-family: Gagalin;
+  color: $color-white;
+  background-color: $color-button-red;
+  border-radius: 2rem;
+  border: 0.5rem solid $color-white;
+  box-shadow: inset 0.3rem 0.1rem 0.6rem $color-light-grey;
+  padding: 0.5rem 1.5rem;
+
+  &:active {
+    color: $color-dark-grey;
+    background-color: $color-button-active-red;
+    box-shadow: inset 0.5rem 0.2rem 1rem $color-black;
+    transition: 0.1s;
+  }
+}

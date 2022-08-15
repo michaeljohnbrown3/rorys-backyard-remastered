@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Tortuga de Caja del Este",
+    "id": "eastern-box-turtle",
+    "conservationStatus": "Vulnerable",
+    "ecologicalRoles": "Las tortugas de caja actúan como dispersores de semillas para muchas plantas.",
+    "threats": "Pérdida del hábitat, colision con automóviles y la captura de animales en la vida silvestre por individuos que abastecen el comercio de mascotas.",
+    "waysYouCanHelp": "Antes de comprar cualquier animal, investiga acerca de ese animal que quieres conservar como mascota.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.25 0.25 0",
+      "position": "0.5 0 1"
+    }
+  },
+  {
+    "name": "Búho Real Americano",
+    "id": "great-horned-owl",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Siendo uno de los mayores depredadores, ayudan a controlar la población de muchos otros animales.",
+    "threats": "Pesticidas, colision con automóviles, pérdida del hábitat, enredo en las mallas y la caza ilegal.",
+    "waysYouCanHelp": "Utiliza un control natural de plagas y quita cualquier malla en el exterior que no esté en uso",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.5 0.5 0",
+      "position": "0.5 0 -0.93"
+    }
+  },
+  {
+    "name": "Rana Verde",
+    "id": "green-treefrog",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Como especies indicadoras, las ranas verdes pueden alertar a los humanos sobre condiciones ambientales negativas.",
+    "threats": "Competencia con la no nativa Rana Verde Cubana.",
+    "waysYouCanHelp": "Construye en tu propio jardín una morada de sapo u otro refugio para las ranas que les proporcione un lugar seguro durante el día.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.2 0.2 0",
+      "position": "-0.3 0 0"
+    }
+  },
+  {
+    "name": "El Lince Rojo de América del Norte (Gato Montés)",
+    "id": "north-american-bobcat",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Los linces son depredadores del ápice que mantienen estables las poblaciones de aves y mamíferos pequeños.",
+    "threats": "La caza y la pérdida de hábitat.",
+    "waysYouCanHelp": "Correr la voz de que los linces generalmente se mantienen alejados de las personas y que su hábitat necesita ser salvado.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "1 1 0",
+      "position": "1.5 0 1"
+    }
+  },
+  {
+    "name": "El Sinsonte Norteño (El Ruiseñor)",
+    "id": "northern-mockingbird",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Estas aves ayudan a dispersar las semillas y también actúan como control natural de plagas al consumir un gran número de insectos.",
+    "threats": "Son presas de los gatos domésticos o salvajes, el clima severo y colisiones con las ventanas.",
+    "waysYouCanHelp": "Mantén tú gato adentro y coloca calcamonías anti-colisión en tus ventanas para ayudar a minimizar la cantidad de colisiones en ventanas por los pájaros.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.25 0.25 0",
+      "position": "-0.5 0 -0.79"
+    }
+  },
+  {
+    "name": "El Mapache",
+    "id": "raccoon",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Los mapaches ayudan a controlar las poblaciones de las especies que constituyen sus presas, incluyendo roedores e insectos.",
+    "threats": "Humanos que ven a estos animales como plagas.",
+    "waysYouCanHelp": "Asegúrate que las tapaderas de los basureros que se mantienen afuera estén cerradas, por la noche retira cualquier fruta caída de los árboles o semillas de aves de los alimentadores y nunca alimentes a ningún animal de la vida silvestre.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.5 0.5 0",
+      "position": "0.5 0 0.5"
+    }
+  },
+  {
+    "name": "Serpiente Rata Roja (Serpiente del Maíz)",
+    "id": "red-rat-snake",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Las serpientes rata roja o serpientes del maíz ayudan a mantener bajo control las poblaciones de roedores.",
+    "threats": "Destrucción del hábitat, identificación errónea como serpiente venenosa y comercio de mascotas.",
+    "waysYouCanHelp": "Si se encuentra con alguna serpiente en la vida silvestre, déjela donde está y dale su espacio.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.25 0.25 0",
+      "position": "-0.5 0 1"
+    }
+  },
+  {
+    "name": "Mofeta Rayada (Zorillo)",
+    "id": "striped-skunk",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Las mofetas o zorrillos son un control natural de plagas, ya que consumen una variedad de insectos.",
+    "threats": "Brotes de enfermedades específicas del zorrillo y los humanos que las ven como plagas.",
+    "waysYouCanHelp": "Corre la voz de que los zorrillos juegan un papel importante en nuestro ambiente.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "0.25 0.25 0",
+      "position": "-0.5 0 0.6"
+    }
+  },
+  {
+    "name": "Venado de Cola Blanca",
+    "id": "white-tailed-deer",
+    "conservationStatus": "De menor preocupación",
+    "ecologicalRoles": "Considerado un herbívoro de la piedra angular, el venado de cola blanca puede tener un efecto dramático en las plantas y en los depredadores de sus áreas.",
+    "threats": "Colisión con automóviles, pérdida del hábitat y los humanos que ven a los animales como plagas.",
+    "waysYouCanHelp": "Busca opciones de jardinería alternas para tu jardín, como ser plantas que no sean tan deliciosas para los venados.",
+    "aImageAttributes": {
+      "rotation": "270 0 0",
+      "scale": "1 1 0",
+      "position": "-1.5 0 0.5"
+    }
+  }
+]

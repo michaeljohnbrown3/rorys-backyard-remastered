@@ -1,0 +1,145 @@
+.info-page {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  right: -100%;
+  // right: 0; /* development purposes only */ ///////////////
+  background-color: $color-tan;
+  overflow-x: hidden;
+  transition: 1s;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__score {
+    position: relative;
+    font-family: $font-primary;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-dark-tan;
+    max-width: 60rem;
+    margin: 0 1.5rem;
+    padding: 1.5rem 1.5rem;
+    border: 1px solid $color-white;
+    text-shadow: 0.2rem 0.1rem 0.5rem $color-black;
+    box-shadow: 0 0 0.5rem $color-white;
+    &--1 {
+    }
+    &--num {
+    }
+    &--2 {
+    }
+  }
+  &__prompt {
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-style: italic;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: $text-shadow;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  &__notebook {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+.notecard {
+  background-image: repeating-linear-gradient(
+    $color-notebook 0rem,
+    $color-notebook 2rem,
+    $color-notebook-line 2.1rem
+  );
+  min-height: 25rem;
+  max-width: 55rem;
+  padding: 0 1rem;
+  box-shadow: 0 0 0.5rem $color-black;
+
+  &__polaroid {
+    height: 18rem;
+    width: 15rem;
+    background-color: $color-white;
+    border: 1px solid $color-light-silver;
+    box-shadow: 0.5rem 0.5rem 1rem $color-black;
+    margin-top: -0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateZ(-4deg);
+
+    &--left {
+      float: left;
+      transform: rotateZ(-4deg);
+      box-shadow: 0.5rem 0.5rem 1rem $color-black;
+      margin-left: -1rem;
+      margin-right: 1.4rem;
+    }
+
+    &--right {
+      float: right;
+      transform: rotateZ(4deg);
+      box-shadow: -0.5rem 0.5rem 1rem $color-black;
+      margin-left: 1.4rem;
+      margin-right: -1rem;
+    }
+
+    &--name {
+      font-family: $font-tertiary;
+      text-align: center;
+      margin: auto 0;
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--photo {
+      position: relative;
+      width: 85%;
+      height: auto;
+      padding-top: 8%;
+      // padding-left: 8%;
+      // padding-right: 8%;
+    }
+
+    &--check {
+      width: auto;
+      height: 2rem;
+      margin-left: 1rem;
+      display: block;
+    }
+  }
+
+  &__facts {
+    font-size: 2rem;
+    font-family: $font-tertiary;
+    padding-top: 0.4rem;
+    line-height: 2.1rem;
+    &--list {
+      list-style: none;
+      margin-bottom: 1rem;
+
+      &--item {
+        // border-bottom: 0.1rem solid $color-notebook-line;
+      }
+    }
+
+    &--header {
+      font-family: $font-primary;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+  }
+}

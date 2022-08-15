@@ -1,0 +1,58 @@
+[
+  {
+    "class": "title__exhibit-1",
+    "text": "Rory's Backyard"
+  },
+  {
+    "class": "title__exhibit-1--info-page",
+    "text": "Rory's Backyard"
+  },
+  {
+    "class": "title__exhibit-2",
+    "text": "Hidden in Plain Sight: Augmented Reality Game"
+  },
+  {
+    "class": "cim-container__cloud-container--cloud",
+    "text": "Can you find all 9 hidden animals?"
+  },
+  {
+    "class": "cim-container__game-info",
+    "text": "Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!"
+  },
+  {
+    "class": "directions__line--to-play",
+    "text": "To play:"
+  },
+  {
+    "class": "directions__line--1",
+    "text": "Point your camera at the exhibit."
+  },
+  {
+    "class": "directions__line--2",
+    "text": "Center an animal on your screen."
+  },
+  {
+    "class": "directions__line--3",
+    "text": "Keep it centered until you see a flash!"
+  },
+  {
+    "class": "btnStart",
+    "text": "Start!"
+  },
+  {
+    "class": "game-window__score--text",
+    "text": "Animals Found: 0"
+  },
+  {
+    "class": "info-page__score--1",
+    "text": "You found "
+  },
+  {
+    "class": "info-page__score--2",
+    "text": " in Rory's Backyard!"
+  },
+  {
+    "class": "info-page__prompt",
+    "text": "Check out Rory's album below to see his notes about each species"
+  }
+]

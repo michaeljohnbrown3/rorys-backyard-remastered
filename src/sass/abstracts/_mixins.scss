@@ -1,0 +1,20 @@
+@mixin scoreboard {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  font-weight: 500;
+  // top: 1rem;
+  color: $color-white;
+  border: 0.5rem solid $color-white;
+  border-radius: 0.7rem;
+  text-shadow: $text-shadow-game;
+  box-shadow: $box-shadow-game;
+  padding: 0.5rem 1.5rem;
+  z-index: 2;
+}
+
+@mixin centerOfViewport {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

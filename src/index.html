@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <title>Rory's Backyard: Hidden in Plain Sight Augmented Reality Game</title>
+  </head>
+
+  <body>
+    <div class="landing-curtain">
+      <div class="title">
+        <img class="title__logo title__logo--landing-page" src="./assets/landingCurtain/LCS.png" />
+        <h1 class="title__exhibit-1">RORY'S BACKYARD</h1>
+        <h2 class="title__exhibit-2">HIDDEN IN PLAIN SIGHT: AUGMENTED REALITY GAME</h2>
+      </div>
+      <div class="cim-container">
+        <div class="cim-container__cloud-container">
+          <div class="cim-container__cloud-container--cloud">CAN YOU FIND ALL 9 HIDDEN ANIMALS?</div>
+        </div>
+        <div class="cim-container__game-info">
+          Florida is home to many kinds of native wildlife that use their ability to camouflage in order to stay safe from predators. See if you can find all 9 hidden animals in less than a minute!
+        </div>
+        <img src="./assets/landingCurtain/magnifyingGlass.png" class="cim-container__magnifying-glass" />
+      </div>
+      <ul class="directions">
+        <h2 class="directions__line directions__line--to-play"></h2>
+        <li class="directions__line directions__line--1"></li>
+        <li class="directions__line directions__line--2"></li>
+        <li class="directions__line directions__line--3"></li>
+      </ul>
+      <div class="start-btn-container" id="start-button-container">
+        <button href="#" class="btn btnStart">START!</button>
+      </div>
+      <img src="./assets/landingCurtain/bottomborder.png" class="grass" />
+    </div>
+    <div class="game-window">
+      <div class="game-window__score-timer-container">
+        <div class="game-window__score">
+          <span class="game-window__score--text">Animals Found: 0</span>
+        </div>
+        <div class="game-window__timer">
+          <span class="game-window__timer--text">1:00</span>
+        </div>
+      </div>
+      <object class="game-window__lens">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle class="game-window__lens--circle" cx="50" cy="50" r="40"></circle>
+        </svg>
+      </object>
+      <object class="game-window__flash"></object>
+    </div>
+
+    <div class="info-page">
+      <div class="title">
+        <img class="title__logo title__logo--score-page" src="./assets/landingCurtain/LCS.png" />
+        <h1 class="title__exhibit-1 title__exhibit-1--info-page"></h1>
+      </div>
+      <p class="info-page__score">
+        <a class="info-page__score--1"></a>
+        <span class="info-page__score--num">0</span>
+        <a class="info-page__score--2"></a>
+      </p>
+      <h2 class="info-page__prompt"></h2>
+      <div class="info-page__notebook">
+        <!-- <div class="notecard">
+          <div class="notecard__polaroid">
+            <img src="" alt="" class="notecard__polaroid--photo" />
+          </div>
+          <div class="notecard__facts"></div>
+        </div> -->
+      </div>
+      <div class="try-again-container" id="try-again-container"></div>
+      <div class="survey-link">
+        We value your feedback!
+        <a href="https://freeonlinesurveys.com/s/HENs76X7#/0">Tap Here</a> to tell us about your experience.
+      </div>
+    </div>
+
+    <!-- <script src="index.js"></script> -->
+
+    <a-scene class="a-scene" arjs="sourceType: webcam; debugUIEnabled: false;" device-orientation-permission-ui="enabled: false">
+      <a-marker markerhandler emitevents="true" id="a-marker" class="a-marker" value="6">
+        <!-- <a-box position="0 0 0" color="red" scale="1 1 1"></a-box> -->
+        <!--box for development purposes-->
+      </a-marker>
+      <a-entity camera look-controls="enabled: false; magicWindowTrackingEnabled: false">
+        <a-entity cursor="fuse: true; fuseTimeout: 1500" position="0 0 -1"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
+
+<!-- <a-marker markerhandler preset="custom" type="pattern" url="assets/pattern-possLCS.patt" emitevents="true" id="animated-marker" value="6"> -->
+<!-- <a-marker markerhandler preset="hiro" emitevents="true" id="animated-marker" value="6"> -->
+<!-- Setup Scene Container
+  <a-box> here for debugging issues with the scene planing to the marker -->
+<!-- c -->
+<!-- </a-marker> -->
+<!-- <a-entity camera look-controls="enabled: false; magicWindowTrackingEnabled: false"> -->
+<!-- This is how the click trigger happens -->
+<!-- <a-entity cursor="fuse: true; fuseTimeout: 1500" position="0 0 -1"> </a-entity> -->
+<!-- </a-entity> -->
