@@ -1,19 +1,30 @@
 import { languagePack } from './importLang';
+import { animalEnter, animalFound, animalLeave } from './Views/gameView';
 
 export const [...animalLoad] = languagePack()[1];
 
-// animalLoad.map((animal, index) => {
-//   if (index % 2 === 1) {
-//     const polaroid = document.querySelector('.notecard__polaroid');
-//   }
-// });
+const [...animals] = languagePack()[1];
 
-// animalLoad.findIndex(animal => {
-//   return animal.id;
-// });
+animals.forEach(animal => {
+  AFRAME.registerComponent(animal.id, {
+    init: function () {
+      this.el.addEventListener('mouseenter', e => {
+        animalEnter();
+      });
+      this.el.addEventListener('mouseleave', e => {
+        animalLeave();
+      });
+      this.el.addEventListener('click', e => {
+        const animalEl = document.querySelector(`#${animal.id}`);
+        const animalId = e.target.id;
+        const dataAnimalId = `[data-animal-id=${animalId}]`;
+        const animalCheck = document.querySelector(dataAnimalId);
 
-// this.indexOf(animal) % 2 === 1
-//   ? 'notecard__polaroid--left'
-//   : 'notecard__polaroid--right';
+        animalCheck.style.display = 'block';
 
-// animalLoad.forEach(function (value, i) {});
+        animalEl.remove();
+        animalFound();
+      });
+    },
+  });
+});

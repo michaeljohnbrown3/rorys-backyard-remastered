@@ -47,7 +47,7 @@
         </div>
       </div>
       <object class="game-window__lens">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <svg class="game-window__lens--svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <circle class="game-window__lens--circle" cx="50" cy="50" r="40"></circle>
         </svg>
       </object>
@@ -73,7 +73,10 @@
           <div class="notecard__facts"></div>
         </div> -->
       </div>
-      <div class="try-again-container" id="try-again-container"></div>
+      <div class="try-again-container" id="try-again-container">
+        <div class="try-again-container__text">Didn't find all the animals?</div>
+        <button class="btn try-again-container__btn">Try again!</button>
+      </div>
       <div class="survey-link">
         We value your feedback!
         <a href="https://freeonlinesurveys.com/s/HENs76X7#/0">Tap Here</a> to tell us about your experience.
@@ -88,7 +91,7 @@
         <!--box for development purposes-->
       </a-marker>
       <a-entity camera look-controls="enabled: false; magicWindowTrackingEnabled: false">
-        <a-entity cursor="fuse: true; fuseTimeout: 1500" position="0 0 -1"></a-entity>
+        <a-entity class="cursor" cursor="fuse: true;" position="0 0 -1"></a-entity>
       </a-entity>
     </a-scene>
   </body>

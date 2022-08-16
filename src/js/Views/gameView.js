@@ -7,6 +7,7 @@ const timerText = document.querySelector('.game-window__timer--text');
 const timerDisplay = document.querySelector('.game-window__timer');
 const scoreBoard = document.querySelector('.game-window__score--text');
 const endScore = document.querySelector('.info-page__score--num');
+const cameraCircle = document.querySelector('.game-window__lens--circle');
 
 const maxAnimals = languagePack()[1].length;
 let animalsFound = 0;
@@ -38,9 +39,7 @@ const finalScore = function (num) {
     endScore.textContent = esValidation ? `${num} animales` : `${num} animals`;
   }
   if (num === maxAnimals) {
-    endScore.textContent = esValidation
-      ? `todos los animales`
-      : `all the animals`;
+    endScore.textContent = esValidation ? `todos los animales` : `all the animals`;
   }
 };
 finalScore(0);
@@ -48,9 +47,7 @@ finalScore(0);
 export const animalFound = function () {
   // increase animalsFound + display on scoreboard
   animalsFound++;
-  scorePrompt = esValidation
-    ? `animales encontrados: ${animalsFound}`
-    : `animals found: ${animalsFound}`;
+  scorePrompt = esValidation ? `animales encontrados: ${animalsFound}` : `animals found: ${animalsFound}`;
   scoreBoard.textContent = scorePrompt;
   // remove animal from AR container
 
@@ -70,4 +67,12 @@ export const startTimer = function () {
       // Add function to end the game ///////////////
     }
   }, 1000);
+};
+
+export const animalEnter = function () {
+  cameraCircle.setAttribute('class', 'game-window__lens--circle-active');
+};
+
+export const animalLeave = function () {
+  cameraCircle.removeAttribute('class', 'game-window__lens--circle-active');
 };

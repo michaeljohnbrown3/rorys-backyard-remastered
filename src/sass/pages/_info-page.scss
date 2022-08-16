@@ -57,11 +57,7 @@
 }
 
 .notecard {
-  background-image: repeating-linear-gradient(
-    $color-notebook 0rem,
-    $color-notebook 2rem,
-    $color-notebook-line 2.1rem
-  );
+  background-image: repeating-linear-gradient($color-notebook 0rem, $color-notebook 2rem, $color-notebook-line 2.1rem);
   min-height: 25rem;
   max-width: 55rem;
   padding: 0 1rem;
@@ -118,7 +114,7 @@
       width: auto;
       height: 2rem;
       margin-left: 1rem;
-      display: block;
+      display: none;
     }
   }
 
@@ -142,4 +138,30 @@
       line-height: 1;
     }
   }
+}
+
+.try-again-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__text {
+    font-family: $font-primary;
+    font-size: 2.4rem;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 0 0 1rem $color-black;
+    color: $color-white;
+    padding: 1rem 0;
+  }
+
+  &__btn {
+    max-width: max-content;
+  }
+}
+
+.survey-link {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 2rem 0;
 }

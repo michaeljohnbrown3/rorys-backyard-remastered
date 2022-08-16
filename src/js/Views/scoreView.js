@@ -12,16 +12,10 @@ export const triggerScoreView = function () {
 export const createNotebookObject = function (data) {
   data.forEach((animal, index) => {
     const notebook = document.querySelector('.info-page__notebook');
-    const conservationStatus = esValidation
-      ? 'Estado de conservación: '
-      : 'Conservation status: ';
-    const ecologicalRoles = esValidation
-      ? 'Rol ecológico: '
-      : 'Ecological roles: ';
+    const conservationStatus = esValidation ? 'Estado de conservación: ' : 'Conservation status: ';
+    const ecologicalRoles = esValidation ? 'Rol ecológico: ' : 'Ecological roles: ';
     const threats = esValidation ? 'Amenazas: ' : 'Threats: ';
-    const waysYouCanHelp = esValidation
-      ? 'Formas en las que puedes ayudar: '
-      : 'Ways you can help: ';
+    const waysYouCanHelp = esValidation ? 'Formas en las que puedes ayudar: ' : 'Ways you can help: ';
 
     const modifier = function () {
       if (index % 2 === 1) {
@@ -34,28 +28,18 @@ export const createNotebookObject = function (data) {
     const markup = `
       <div class="notecard">
             <div class="notecard__polaroid ${modifier()}">
-              <img src="./img/${
-                animal.id
-              }.jpg" alt="" class="notecard__polaroid--photo" />
+              <img src="./img/${animal.id}.jpg" alt="" class="notecard__polaroid--photo" />
               <div class="notecard__polaroid--name">
               <h2>${animal.name}</h2>
-              <img src="./img/green-check-mark.png" alt="Check mark" class="notecard__polaroid--check" />
+              <img src="./img/green-check-mark.png" alt="Check mark" class="notecard__polaroid--check" data-animal-id="${animal.id}" />
               </div>
             </div>
             <div class="notecard__facts">
               <ul class="notecard__facts--list">
-                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${conservationStatus.toUpperCase()}</span>${
-      animal.conservationStatus
-    }</li>
-                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${ecologicalRoles.toUpperCase()}</span>${
-      animal.ecologicalRoles
-    } </li>
-                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${threats.toUpperCase()}</span>${
-      animal.threats
-    }</li>
-                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${waysYouCanHelp.toUpperCase()}</span>${
-      animal.waysYouCanHelp
-    }</li>
+                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${conservationStatus.toUpperCase()}</span>${animal.conservationStatus}</li>
+                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${ecologicalRoles.toUpperCase()}</span>${animal.ecologicalRoles} </li>
+                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${threats.toUpperCase()}</span>${animal.threats}</li>
+                <li class="notecard__facts--list--item"><span class="notecard__facts--header">${waysYouCanHelp.toUpperCase()}</span>${animal.waysYouCanHelp}</li>
               </ul>
             </div>
           </div>

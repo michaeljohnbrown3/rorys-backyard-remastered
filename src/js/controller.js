@@ -8,6 +8,8 @@ import * as scoreView from './Views/scoreView';
 import { loadPhotos } from './Views/View';
 import { loadText } from './Views/View';
 
+const cursor = document.querySelector('.cursor');
+
 const init = function () {
   loadPhotos();
   loadText();
@@ -17,5 +19,3 @@ const init = function () {
 init();
 
 startBtn.addEventListener('click', start);
-
-window.addEventListener('click', gameView.animalFound);
