@@ -3,7 +3,8 @@ import { languagePack } from '../importLang';
 import { esValidation } from '../config';
 
 const scoreView = document.querySelector('.info-page');
-const maxAnimals = languagePack()[1].length;
+export const tryAgainBtn = document.querySelector('.try-again-container__btn');
+const tryAgainContainer = document.querySelector('.try-again-container');
 
 export const triggerScoreView = function () {
   scoreView.style.right = 0;
@@ -46,4 +47,12 @@ export const createNotebookObject = function (data) {
       `;
     notebook.insertAdjacentHTML('beforeend', markup);
   });
+};
+
+export const tryAgain = function () {
+  location.reload();
+};
+
+export const removeTryAgainBtn = function () {
+  tryAgainContainer.style.display = 'none';
 };

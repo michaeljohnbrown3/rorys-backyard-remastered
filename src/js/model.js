@@ -1,5 +1,5 @@
 import { languagePack } from './importLang';
-import { animalEnter, animalFound, animalLeave } from './Views/gameView';
+import { animalEnter, animalFound, animalLeave, cameraFlash } from './Views/gameView';
 
 export const [...animalLoad] = languagePack()[1];
 
@@ -24,6 +24,7 @@ animals.forEach(animal => {
 
         animalEl.remove();
         animalFound();
+        cameraFlash();
       });
     },
   });

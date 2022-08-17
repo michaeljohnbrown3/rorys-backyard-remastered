@@ -9,7 +9,7 @@
   text-shadow: $text-shadow-game;
   box-shadow: $box-shadow-game;
   padding: 0.5rem 1.5rem;
-  z-index: 2;
+  z-index: 3;
 }
 
 @mixin centerOfViewport {

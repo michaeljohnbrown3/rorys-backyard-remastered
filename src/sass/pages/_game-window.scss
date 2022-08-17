@@ -1,5 +1,6 @@
 .game-window {
   padding: 1rem;
+  left: 0;
   &__score-timer-container {
     display: flex;
     justify-content: space-between;
@@ -31,7 +32,15 @@
     z-index: 2;
 
     &--svg {
-      // fill: none;
+      fill: transparent;
+    }
+
+    &--circle-reticle {
+      stroke: $color-black;
+      stroke-width: 0.4rem;
+      stroke-dasharray: -90;
+      stroke-dashoffset: 1000;
+      fill: transparent;
     }
 
     &--circle {
@@ -39,7 +48,7 @@
       stroke-width: 0.4rem;
       stroke-dasharray: -90;
       stroke-dashoffset: 1000;
-      fill: none;
+      fill: transparent;
 
       &-active {
         width: 12rem;
@@ -48,7 +57,7 @@
         stroke-width: 1rem;
         stroke-dasharray: 360;
         stroke-dashoffset: 360;
-        fill: none;
+        fill: transparent;
         animation: stroke 1.5s linear;
         animation-fill-mode: backwards;
 
@@ -63,13 +72,14 @@
 
   &__flash {
     display: none;
-    position: relative;
+    position: fixed;
     // border: .1rem solid $color-white; Not sure I need this
     background-color: $color-white;
-    margin-top: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     // color: $color-black; Not sure I need this
-    z-index: 1;
+    z-index: 2;
   }
 }

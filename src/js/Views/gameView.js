@@ -1,5 +1,5 @@
 import { TIME_LIMIT } from './../config';
-import { triggerScoreView } from './scoreView';
+import { removeTryAgainBtn, triggerScoreView } from './scoreView';
 import { languagePack } from '../importLang';
 import { esValidation } from './../config';
 
@@ -8,6 +8,7 @@ const timerDisplay = document.querySelector('.game-window__timer');
 const scoreBoard = document.querySelector('.game-window__score--text');
 const endScore = document.querySelector('.info-page__score--num');
 const cameraCircle = document.querySelector('.game-window__lens--circle');
+const flashEl = document.querySelector('.game-window__flash');
 
 const maxAnimals = languagePack()[1].length;
 let animalsFound = 0;
@@ -66,6 +67,9 @@ export const startTimer = function () {
       clearInterval(timerClock);
       // Add function to end the game ///////////////
     }
+    if (animalsFound === maxAnimals) {
+      removeTryAgainBtn();
+    }
   }, 1000);
 };
 
@@ -75,4 +79,11 @@ export const animalEnter = function () {
 
 export const animalLeave = function () {
   cameraCircle.removeAttribute('class', 'game-window__lens--circle-active');
+};
+
+export const cameraFlash = function () {
+  flashEl.style.display = 'block';
+  setTimeout(() => {
+    flashEl.style.display = 'none';
+  }, 100);
 };
