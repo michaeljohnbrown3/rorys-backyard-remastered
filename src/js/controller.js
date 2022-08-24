@@ -13,8 +13,7 @@ const init = function () {
   loadText();
   renderAnimals();
   scoreView.createNotebookObject(model.animalLoad);
+  startBtn.addEventListener('click', start);
+  scoreView.tryAgainBtn.addEventListener('click', scoreView.tryAgain);
 };
 init();
-
-startBtn.addEventListener('click', start);
-scoreView.tryAgainBtn.addEventListener('click', scoreView.tryAgain);
