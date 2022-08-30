@@ -1,5 +1,5 @@
 // Game's time limit
-export const TIME_LIMIT = 60;
+export const TIME_LIMIT = 6;
 
 /////////////// LANGUAGE VALIDATION FOR DEVELOPMENT
 export const esValidation = /es/.test(navigator.language);
